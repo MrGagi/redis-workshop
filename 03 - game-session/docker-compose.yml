@@ -1,0 +1,16 @@
+version: '3'
+services:
+  game-session-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-node.dockerfile
+    volumes:
+      - ./:/app/
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_HOST=game-session-redis
+      - APP_PORT=3000
+    ports:
+      - 3000:3000
+  game-session-redis:
+    image: redis:alpine

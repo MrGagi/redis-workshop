@@ -1,0 +1,17 @@
+version: '3'
+services:
+  recently-views-server:
+    build:
+      context: .
+      dockerfile: Dockerfile-node.dockerfile
+    volumes:
+      - /app/node_modules
+      - ./:/app/
+    environment:
+      - REDIS_PORT=6379
+      - REDIS_HOST=recently-views-redis
+      - APP_PORT=3000
+    ports:
+      - 3000:3000
+  recently-views-redis:
+    image: redis:alpine

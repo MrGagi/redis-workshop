@@ -1,0 +1,16 @@
+{
+  "name": "recently-viewed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon ./server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10",
+    "redis": "^2.8.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
