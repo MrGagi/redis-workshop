@@ -14,12 +14,10 @@ User can go to the [Products](http://localhost:3000/products) and there we need 
 
 You can start looking at the server/index.js, there is application
 
+![How it works](https://raw.githubusercontent.com/MrGagi/redis-workshop/master/diagrams/02%20-%20recently-viewed/Recently%20Viewed%20Products-Recently%20Viewed%20Products.png)
+
+![How it looks](https://raw.githubusercontent.com/MrGagi/redis-workshop/master/diagrams/02%20-%20recently-viewed/Recently%20Viewed%20Products-Look%20in%20redis.png)
+
 ## Solution
 
 You can find solution in **solution** folder, there is index.js file which contains code.
-
-## Legend
-
-* 🤔 - **Wise Developer** - This little guy wants you to stop and think, he is wise, listen to him. This is a guy who always knows what to do.
-* 💡 - **Hint** - Read hints, they are going to give you a good lead
-* 🔥 - **You are rocking** - You are near the end, just one more step.

@@ -8,6 +8,8 @@ When user hits again your app it should get HTML from cache.
 You should look into **server** and **hooks** folder, your code should go there, there are some hints
 that are going to guide you through the exercise
 
+![Diagram](https://raw.githubusercontent.com/MrGagi/redis-workshop/master/diagrams/01%20-%20server-side-rendering/Server%20Side%20Rendering-Server%20side%20Rendering%20(1).png)
+
 
 ## Solution
 
