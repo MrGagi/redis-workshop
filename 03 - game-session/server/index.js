@@ -4,7 +4,9 @@ const app = express();
 const port = process.env.APP_PORT;
 
 /**
- * Hint
+ * We need to build the simulation of game sessions
+ * All data are kept in redis, every session can contain
+ * only two users, so it's 1vs1 game session
  */
 
 app.get('/game/start', (req, res) => {
