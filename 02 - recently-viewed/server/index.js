@@ -6,9 +6,11 @@ const port = process.env.APP_PORT;
 const USER_ID = '1234567890';
 
 app.get('/products/count', (req, res) => {
+  const date = new Date();
 
   /**
   * 💡There is command in redis for that https://redis.io/commands/ZCOUNT
+  *  You can use Date and Date#setHour method to get timestamp for score (min and max)
   */
   redis.SOME_FUNCITON(
   );
