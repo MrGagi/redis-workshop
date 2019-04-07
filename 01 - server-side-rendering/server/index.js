@@ -10,17 +10,12 @@ config.dev = !(process.env.NODE_ENV === 'production')
 
 const key = 'loggedout-users'
 const readCache = (req, res, next) => {
-  /*
-   * 💡You need to read key value from the Redis
-   */
-  redis.READ_COMMAND(key, (err, response) => {
+  redis.get(key, (err, response) => {
     if (!response || err) {
       return next()
     }
 
-    /*
-     * 💡This is middleware, you should do something with the HTML if it exists in redis
-     */
+    res.send(response)
   })
 }
 
