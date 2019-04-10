@@ -14,11 +14,11 @@ app.get('/game/start', (req, res) => {
 });
 
 app.get(`/game/:gameId/join`, (req, res) => {
-
+  const gameId = req.params.gameId;
 });
 
 app.get(`/game/:gameId/stop`, (req, res) => {
-
+  const gameId = req.params.gameId;
 });
 
 app.listen(port, () => {
