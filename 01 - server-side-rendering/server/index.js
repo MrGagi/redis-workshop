@@ -20,6 +20,7 @@ const readCache = (req, res, next) => {
 
     /*
      * 💡This is middleware, you should do something with the HTML if it exists in redis
+     * you can send response with res.send
      */
   })
 }
