@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile-node.dockerfile
     volumes:
+      - /app/node_modules
       - ./:/app/
     environment:
       - REDIS_PORT=6379
